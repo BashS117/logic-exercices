@@ -4,4 +4,19 @@ function isPalindrome(st) {
     return cleanedPalabra == reversedPalabra;
     
 }
-console.log(isPalindrome("reconocer"));
+console.log(isPalindrome("reconocerAA"));
+
+////////////////////
+
+function saberSiesPalindromo(palabra) {
+    const palabraLimpia=palabra.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const palabraReversa=palabraLimpia.split(" ").reverse().join("");
+    
+    
+    console.log("PALABRArEVERSED",palabraLimpia.split("").reverse().join(''))
+    console.log(palabraLimpia)
+    
+    return palabraLimpia ==  palabraLimpia.split("").reverse().join('');
+
+}
+console.log(saberSiesPalindromo("reconoceremos"));
