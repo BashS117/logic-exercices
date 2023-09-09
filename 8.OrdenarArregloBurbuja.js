@@ -28,7 +28,7 @@ const numeros=[64,34,25,12,22,11,90,33,45,20]
 console.log(numeros.length)
 console.log(ordenarArreglobBurbuja(numeros))
 
-
+//
 
 function mySort(arraicito){
     const n=arraicito.length;

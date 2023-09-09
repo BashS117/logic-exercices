@@ -1,3 +1,4 @@
+//suma de los multiplos de 3 y 5 menores que X
 function sumMultiples(num) {
     let sum = 0;
     for (let iteracion =1;iteracion<num;iteracion++){

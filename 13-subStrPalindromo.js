@@ -3,8 +3,9 @@ function isPalindrome(str,subStr) {
     const  limpiadaSub=subStr.toLowerCase().replace(/[^a-zA-Z]/g, '');
  
  
-    return limpiadaSub=== limpiadaSub.split('').reverse().join('');
+    let subReversed= limpiadaSub.split('').reverse().join('');
  
+    return limpiada.includes(subReversed) && subReversed ===limpiadaSub;
  
  }
  console.log(isPalindrome("racecar is a common example", "racecar"));
