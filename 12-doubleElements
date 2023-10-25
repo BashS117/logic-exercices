@@ -1,0 +1,18 @@
+// Sum of doubled elements in an array
+// Write a funtion 'sumOfDoubledElements' that takes an array of integers, doubles each element, and then returns the sum of all the elements in the array. An empty array should return zero.
+function sumOfDoubledElements(arr) {
+
+    let totalSum = 0;
+    arr.forEach((num)=>{
+      let valorDoble = num*2;
+
+      totalSum+=valorDoble;
+
+
+
+
+
+    })
+    return totalSum
+    // Write your code here
+}
