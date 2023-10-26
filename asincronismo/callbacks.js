@@ -42,3 +42,18 @@ function saludar(nombre,callback){
 saludar('sebas', function(nombre){
     console.log("adios " + nombre)
 })
+
+//ejercicio saludar hablar adios
+
+function saludar(nombre,callback){
+    console.log('hola '+ nombre)
+    return setTimeout(()=>{
+callback(nombre)
+    },3000)
+}
+
+
+saludar('sebas', function(nombre){
+    console.log('adios '+ nombre)
+
+})

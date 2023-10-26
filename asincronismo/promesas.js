@@ -53,14 +53,27 @@ fetchingData();
 //ejercicio saludar y adios con promise
 
 function saludar(nombre){
-    console.log('hola '+ nombre);
+  
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-resolve(nombre)
+            console.log('hola '+ nombre);
+           resolve(nombre)
         }, 3000)
     })
 
 }
 
+function hablar (nombre){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log(' bla bla bal');
+            resolve(nombre);
+    },2000) 
+    })
+}
+
 saludar('sebas')
+.then(hablar)
+.then(hablar)
+.then(hablar)
 .then((nombre)=>console.log('adios' + nombre))

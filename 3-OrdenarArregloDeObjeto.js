@@ -10,5 +10,13 @@ const people= [
 
 ]
 
-sortObjects(people, "age");
+// sortObjects(people, "age");
+console.log(people)
+
+
+function ordenarObjetos(arr, propiedad){
+    arr.sort((a,b)=>a[propiedad]-b[propiedad])
+}
+
+ordenarObjetos(people, "age");
 console.log(people)
