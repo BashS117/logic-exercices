@@ -57,3 +57,19 @@ saludar('sebas', function(nombre){
     console.log('adios '+ nombre)
 
 })
+
+// ejercicio
+
+function saludar (nombre, callback){
+    
+console.log("hola "+ nombre)
+    return setTimeout(()=>{
+callback(nombre)
+    },3000)
+}
+
+
+saludar("deisy", (nombre)=>{
+    console.log("asios "+ nombre);
+
+})
