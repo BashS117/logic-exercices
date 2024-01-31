@@ -11,6 +11,20 @@ sumTwoNumbers(2,2,(resultado)=>{
 console.log(resultado*2)
 })
 
+//otro callbak
+ const estofirst=(name,callback)=>{
+    console.log('hola '+ name)
+
+    return setTimeout(()=>{
+        callback(name)
+
+    }, 3000)
+ }
+
+
+ estofirst('dei', (name)=>{
+    console.log('estosegundo='+name)
+ })
 //Promises
 
 function sumarDosNumeros(num1,num2){
@@ -68,8 +82,18 @@ callback(nombre)
     },3000)
 }
 
+///OTRO EJERCCIO
 
-saludar("deisy", (nombre)=>{
+
+function parlar (nombre, callback){
+    console.log('hola amigo '+nombre)
+    return setTimeout(()=>{
+        callback(nombre)
+    }, 3000)
+}
+
+
+parlar("deisy", (nombre)=>{
     console.log("asios "+ nombre);
 
 })
