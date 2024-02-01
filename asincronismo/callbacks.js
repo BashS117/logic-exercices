@@ -42,7 +42,19 @@ sumarDosNumeros(1,2)
 .then(primerResultado=>{
     console.log(primerResultado*2)
 })
-
+//
+function sumar (num1,num2){
+    const resultado1 = num1 + num2;
+    console.log(resultado1);
+    return new Promise (function(resolve,reject){
+        setTimeout(()=>{
+            resolve(resultado1)
+        },3000)
+    })
+}
+sumar(1,2).then(resultado1=>{
+    console.log(resultado1 + 7)
+})
 //ejercicio saludo y despedida
 
 
