@@ -4,7 +4,7 @@ function isPalindrome(st) {
     return cleanedPalabra == reversedPalabra;
     
 }
-console.log(isPalindrome("reconocere"));
+console.log(isPalindrome("reconocer"));
 
 ////////////////////
 
@@ -15,3 +15,12 @@ function saberSiesPalindromo(palabra) {
 
 }
 console.log(saberSiesPalindromo("reconoceremos"));
+/////
+
+function esPalindromo(cadenaTexto){
+    const palabraLimpiada=cadenaTexto.toLowerCase().replace(/[^a-z0-9]/g, '');
+    //devuelve booleano
+    return palabraLimpiada == palabraLimpiada.split("").reverse().join();
+}
+
+console.log(esPalindromo("reconocer"));
