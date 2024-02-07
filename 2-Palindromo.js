@@ -17,10 +17,19 @@ function saberSiesPalindromo(palabra) {
 console.log(saberSiesPalindromo("reconoceremos"));
 /////
 
+// function esPalindromo(cadenaTexto){
+//     const palabraLimpiada=cadenaTexto.toLowerCase().replace(/[^a-z0-9]/g, '');
+//     //devuelve booleano
+//     return palabraLimpiada == palabraLimpiada.split("").reverse().join('');
+// }
+
+// console.log(esPalindromo("reconocewr"));
+///
+
 function esPalindromo(cadenaTexto){
     const palabraLimpiada=cadenaTexto.toLowerCase().replace(/[^a-z0-9]/g, '');
     //devuelve booleano
-    return palabraLimpiada == palabraLimpiada.split("").reverse().join();
+    return palabraLimpiada == palabraLimpiada.split("").reverse().join('');
 }
 
-console.log(esPalindromo("reconocer"));
+console.log(esPalindromo("reconocewr"));
