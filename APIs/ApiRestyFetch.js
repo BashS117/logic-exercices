@@ -11,3 +11,6 @@ fetch("https://kogezxjfuixqqiarnnxo.supabase.co/rest/v1/Questions?select=*", opt
 .then(response=>{
     console.log(response)
 })
+
+//
+

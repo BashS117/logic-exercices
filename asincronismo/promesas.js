@@ -108,6 +108,8 @@ function saludar (name){
 }
 
 saludar('sebas').then((name)=>{
-    console.log('adios '+ name)
+setTimeout(()=>{
+    console.log('ADIOS '+ name)
 
+},2000)
 })

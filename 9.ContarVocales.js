@@ -26,6 +26,6 @@ function contarNum (string){
     return contador
 }
 
-const texto2= "hola bienvenudis a la clase 8 de JS";
+const texto2= "h9ola 4bienvenud3is a la clase 8 de JS";
 console.log(contarNum(texto2))
 ///
