@@ -109,3 +109,16 @@ parlar("deisy", (nombre)=>{
     console.log("asios "+ nombre);
 
 })
+///
+
+function charlar (nombre,cb){
+    console.log('hola amigo '+nombre)
+    return setTimeout(()=>{
+cb(nombre)
+    },2000)
+}
+
+charlar('sebas',(despedidad)=>{
+    console.log('adios'+despedidad)
+
+})
