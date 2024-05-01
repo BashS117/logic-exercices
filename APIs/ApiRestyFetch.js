@@ -14,3 +14,8 @@ fetch("https://kogezxjfuixqqiarnnxo.supabase.co/rest/v1/Questions?select=*", opt
 
 //
 
+fetch("https://kogezxjfuixqqiarnnxo.supabase.co/rest/v1/Questions?select=*",options)
+.then(res=>res.json())
+.then(res=>{
+    console.log(response)
+})
