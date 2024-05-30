@@ -113,3 +113,19 @@ setTimeout(()=>{
 
 },2000)
 })
+//
+
+function saludar (name){
+    console.log(`hola` + name)
+    return new Promise ((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve(name)
+        }, 3000)
+    })
+}
+saludar('sebas').then((name)=>{
+    setTimeout(()=>{
+        console.log(`ADIOS`+ name)
+    },2000)
+
+})
