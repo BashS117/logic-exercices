@@ -122,3 +122,14 @@ charlar('sebas',(despedidad)=>{
     console.log('adios'+despedidad)
 
 })
+// 
+function platicar (nombre,callback){
+    console.log('hola'+ nombre)
+    return setTimeout(()=>{
+       callback(nombre) 
+    },3000)
+}
+
+platicar ('sebas',(parametro)=>{
+    console.log('adios'+ parametro)
+})

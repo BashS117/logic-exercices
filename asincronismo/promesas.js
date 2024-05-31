@@ -120,12 +120,30 @@ function saludar (name){
     return new Promise ((resolve,reject)=>{
         setTimeout(()=>{
             resolve(name)
+            console.log('setTime 3S')
         }, 3000)
+        console.log('terminado')
     })
 }
 saludar('sebas').then((name)=>{
     setTimeout(()=>{
         console.log(`ADIOS`+ name)
     },2000)
+
+})
+
+function promesaSaludar(name){
+    console.log('hola'+name)
+    return new Promise((res,rej)=>{
+        console.log('promesa devuelta')
+
+        setTimeout(()=>{
+            res(name)
+
+        },3000)
+    })
+}
+promesaSaludar('Deisi').then((name)=>{
+    console.log('adios'+name)
 
 })
