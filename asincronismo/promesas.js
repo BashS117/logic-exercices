@@ -135,10 +135,9 @@ saludar('sebas').then((name)=>{
 function promesaSaludar(name){
     console.log('hola'+name)
     return new Promise((res,rej)=>{
-        console.log('promesa devuelta')
-
         setTimeout(()=>{
             res(name)
+            console.log('promesa devuelta')
 
         },3000)
     })
@@ -147,3 +146,15 @@ promesaSaludar('Deisi').then((name)=>{
     console.log('adios'+name)
 
 })
+
+function practicePromise(name){
+    console.log('hola'+name)
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res(name)
+            console.log('promesa devuelta')
+        },3000)
+    })
+}
+practicePromise('cata')
+.then((name)=>{console.log('adios'+name)})

@@ -12,3 +12,6 @@ fetch('https://open-weather13.p.rapidapi.com/city/landon/EN', options)
     console.log(response)
 })
 
+
+fetch('link',options).then(res=>res.json())
+.then(response=>{console.log(response)})
